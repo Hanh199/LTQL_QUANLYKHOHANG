@@ -1,0 +1,64 @@
+﻿@model IEnumerable<LTQL.Models.CTPX>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Chi tiết phiếu xuất</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MaPX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenPX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenMH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenNCC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Soluong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dongia)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaPX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenPX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenMH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenNCC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Soluong)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dongia)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.STTPX }) |
+            @Html.ActionLink("Details", "Details", new { id=item.STTPX }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.STTPX })
+        </td>
+    </tr>
+}
+
+</table>
