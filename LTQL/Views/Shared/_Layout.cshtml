@@ -6,7 +6,6 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    @Scripts.Render("~/bundles/ckeditor")
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -24,7 +23,6 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Đăng nhập", "Login", "Account")</li>
                     <li>@Html.ActionLink("Đăng xuất", "Logoff", "Account")</li>
-                    <li>@Html.ActionLink("Thông tin", "Index", "THONGTINs")</li>
                     <li>@Html.ActionLink("Mặt hàng", "Index", "MATHANGs")</li>
                     <li>@Html.ActionLink("Khách hàng", "Index", "KHACHHANGs")</li>
                     <li>@Html.ActionLink("Kho hàng", "Index", "KHOHANGs")</li>

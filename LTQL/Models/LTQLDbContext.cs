@@ -21,9 +21,7 @@ namespace LTQL.Models
         public virtual DbSet<CTPN> CTPNs { get; set; }
         public virtual DbSet<CTPX> CTPXs { get; set; }
         public virtual DbSet<NHACUNGCAP> NHACUNGCAPs { get; set; }
-        public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<Account> Account { get; set; }
-        public virtual DbSet<THONGTIN> THONGTINs  { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -61,6 +59,5 @@ namespace LTQL.Models
               .IsUnicode(false);
         }
 
-        public System.Data.Entity.DbSet<LTQL.Models.Articles> Articles { get; set; }
     }
 }

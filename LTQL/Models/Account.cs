@@ -10,7 +10,6 @@ namespace LTQL.Models
     
     public class Account
     {
-        [Key]
         //validation with model
         //username không được để trống
         [Required(ErrorMessage = "Username is required.")]
